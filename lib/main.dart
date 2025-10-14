@@ -29,14 +29,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Bank'),
+        backgroundColor: Colors.green,
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () => print('Hello, Flutter Training!'), child: Text('Print!')),
+            ElevatedButton(onPressed: () => print(), child: Text('Print!')),
+            ElevatedButton(onPressed: () => print('hello'), child: Text('Sign in')),
           ],
         ),
       ),
     );
   }
+}
+
+class SignInPage extends StatelessWidget {
+  const SignInPage({super.key})
 }
